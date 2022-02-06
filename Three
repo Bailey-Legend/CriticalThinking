@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int CriticalThinkingThree() {
+//Initialize variables
+int a, b, c, *x , *y, *z; 
+//ask user to enter number(s)
+cout<<"Please Enter First Number: ";
+
+cin>>a;
+
+cout<<"Please Enter Second Number: ";
+
+cin>>b;
+
+cout<<"Please Enter Third Number: ";
+
+cin>>c;
+//Memory to pointers
+x = new int;
+
+*x = a;
+
+y = new int;
+
+*y = b;
+
+z = new int;
+
+*z = c;
+//Assign value to pointers 
+cout<<"Integers are (A,B,C): "<<a <<" "<<b<<" "<<c<<endl;
+
+cout<<"Integers are (X, Y, Z): "<<*x <<" "<<*y<<" "<<*z;
+//Delete allocated memory 
+delete x;
+
+delete y;
+
+delete z;
+
+}
